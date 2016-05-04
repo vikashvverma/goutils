@@ -40,7 +40,7 @@ func main() {
 	index := random(0, 1008)
 
 	fmt.Println("****************************************************")
-	fmt.Printf("%s\n", vocabulary[index].Slug)
-	fmt.Printf("%s\n", strings.Replace(strings.Replace(vocabulary[index].Description[1].Content, "<strong>", "", -1), "</strong>", "", -1))
+	fmt.Printf("           %s\n", vocabulary[index].Slug)
+	fmt.Printf("           %s\n", strings.Replace(strings.Replace(vocabulary[index].Description[1].Content, "<strong>", "", -1), "</strong>", "", -1))
 	fmt.Println("****************************************************")
 }
