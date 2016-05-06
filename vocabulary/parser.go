@@ -37,10 +37,10 @@ func main() {
 	if err = jsonParser.Decode(&vocabulary); err != nil {
 		log.Println("parsing config file", err.Error())
 	}
-	index := random(0, 1008)
+	index := random(0, 1000)
 
-	fmt.Println("****************************************************")
-	fmt.Printf("           %s\n", vocabulary[index].Slug)
-	fmt.Printf("           %s\n", strings.Replace(strings.Replace(vocabulary[index].Description[1].Content, "<strong>", "", -1), "</strong>", "", -1))
-	fmt.Println("****************************************************")
+	fmt.Println("======================================================================================================")
+	fmt.Printf("           word: %s\n", vocabulary[index].Slug)
+	fmt.Printf("           meaning: %s\n", strings.Replace(strings.Replace(vocabulary[index].Description[1].Content, "<strong>", "", -1), "</strong>", "", -1))
+	fmt.Println("======================================================================================================")
 }
