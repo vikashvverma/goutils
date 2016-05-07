@@ -27,7 +27,7 @@ func random(min, max int) int {
 }
 
 func main() {
-	configFile, err := os.Open("/Users/sumankum/Projects/src/goutils/vocabulary/words.json")
+	configFile, err := os.Open("/Users/Vikash/www/src/github.com/vikashvverma/goutils/vocabulary/words.json")
 	if err != nil {
 		log.Println("opening words file", err.Error())
 	}
